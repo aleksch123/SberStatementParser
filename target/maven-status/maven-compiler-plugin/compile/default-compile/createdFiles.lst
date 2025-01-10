@@ -1,0 +1,4 @@
+io\proj3ct\StatementBot\config\BotConfig.class
+io\proj3ct\StatementBot\StatementBotApplication.class
+io\proj3ct\StatementBot\service\TelegramBot.class
+io\proj3ct\StatementBot\config\BotInitializer.class
