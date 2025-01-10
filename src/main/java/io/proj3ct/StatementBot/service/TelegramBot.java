@@ -2,8 +2,6 @@ package io.proj3ct.StatementBot.service;
 
 import io.proj3ct.StatementBot.config.BotConfig;
 import io.proj3ct.StatementBot.models.Transaction;
-import io.proj3ct.StatementBot.util.PDFTransactionParser;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.meta.api.methods.GetFile;
@@ -20,8 +18,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.util.List;
 
-import static io.proj3ct.StatementBot.util.ExcelExporter.exportToExcel;
-import static io.proj3ct.StatementBot.util.PDFTransactionParser.parseTransactions;
+import static io.proj3ct.StatementBot.handler.ExcelExporter.exportToExcel;
+import static io.proj3ct.StatementBot.handler.PDFTransactionParser.parseTransactions;
 
 //@Slf4j
 @Component
