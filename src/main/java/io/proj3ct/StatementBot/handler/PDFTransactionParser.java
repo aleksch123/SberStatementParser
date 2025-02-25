@@ -25,7 +25,6 @@ public class PDFTransactionParser {
         try (PDDocument document = PDDocument.load(new File(pdfPath))) {
             PDFTextStripper stripper = new PDFTextStripper();
             String text = stripper.getText(document);
-
             String[] lines = text.split("\n");
             String currentMerchant = "";
 
