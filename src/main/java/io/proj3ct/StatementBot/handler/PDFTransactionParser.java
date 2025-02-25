@@ -27,7 +27,6 @@ public class PDFTransactionParser {
             String text = stripper.getText(document);
             String[] lines = text.split("\n");
             String currentMerchant = "";
-
             for (int i = 0; i < lines.length; i++) {
                 Matcher matcher = TRANSACTION_PATTERN.matcher(lines[i]);
 
