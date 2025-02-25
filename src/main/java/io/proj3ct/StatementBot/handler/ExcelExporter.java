@@ -51,7 +51,6 @@ public class ExcelExporter {
             try (FileOutputStream outputStream = new FileOutputStream(outputPath)) {
                 workbook.write(outputStream);
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
